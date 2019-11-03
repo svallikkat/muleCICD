@@ -5,11 +5,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="01628b7d-5d01-49ff-b9df-4726ce0f1760" >
-		<http:listener-connection host="0.0.0.0" port="9091" />
+		<http:listener-connection host="${host}" port="${port}" />
 	</http:listener-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="164ee74f-7aa0-4d77-b8bb-5c8ff686ceb3" file="${env}.yaml" />
+	<global-property doc:name="Global Property" doc:id="4e48fc4a-a57d-4016-b16d-73809b786850" name="env" value="dev" />
 	<flow name="cicdFlow" doc:id="d315fecc-bc11-49e7-901d-615c736444ec" >
-		<http:listener doc:name="Listener" doc:id="d4a13bb6-7e4a-4819-8253-649c857cd92e" config-ref="HTTP_Listener_config" path="/cicd"/>
+		<http:listener doc:name="Listener" doc:id="d4a13bb6-7e4a-4819-8253-649c857cd92e" config-ref="HTTP_Listener_config" path="${path}"/>
 		<logger level="INFO" doc:name="Logger" doc:id="7e0ae10d-e681-432b-8d83-77b26ddeffc5" message="Hello CICD - Logger"/>
-		<set-payload value='{ "Status" : "Success", "Message" : "Hello Welcome to Git Integrated Mule Project" }' doc:name="Set Payload" doc:id="d46ec83d-e3f3-48d0-9133-66786465bed8" mimeType="application/json"/>
+		<set-payload value='{ "Status" : "Success", "Message" : "Hello Welcome to Git Integrated Mule Project -2" }' doc:name="Set Payload" doc:id="d46ec83d-e3f3-48d0-9133-66786465bed8" mimeType="application/json"/>
 	</flow>
 </mule>

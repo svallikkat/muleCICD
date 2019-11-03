@@ -1,0 +1,8 @@
+path: "/Dev/cicd"
+host: "localhost"
+port: "9092"
+mule.version: "4.2.1"
+username: "OnPrem02Student10"
+password: "L3arnmule"
+cloudhub.application.name: "cicd"
+environment: "dev"
