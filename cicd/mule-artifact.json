@@ -1,3 +1,19 @@
 {
-  "minMuleVersion": "4.2.1"
+  "configs": [
+    "cicd.xml"
+  ],
+  "redeploymentEnabled": true,
+  "name": "cicd",
+  "minMuleVersion": "4.2.1",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
 }
