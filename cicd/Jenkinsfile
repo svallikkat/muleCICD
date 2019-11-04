@@ -14,7 +14,7 @@ pipeline{
  	stage ('Deploy'){
  		steps {
  			withMaven(maven:'maven'){
- 				sh 'mvn -f cicd/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Dmule.environment=Sandbox -DmuleDeploy'
+ 				sh 'mvn -e cicd/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Dmule.environment=Sandbox -DmuleDeploy'
  			
  			}
  		}
