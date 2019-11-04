@@ -32,7 +32,6 @@
 			            <password>${password}</password>
 			            <applicationName>${cloudhub.application.name}</applicationName>
 			            <environment>${environment}</environment>
-			            <businessGroup>${anypoint.businessGroup}</businessGroup>
 			        </cloudHubDeployment>
 		   	 	</configuration>
    	 		</plugin>
