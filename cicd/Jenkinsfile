@@ -7,7 +7,7 @@ pipeline{
  	stage ('Build'){
  		steps {
  			withMaven(maven:'maven'){
- 				sh 'mvn -f cicd/pom.xml clean package install mule deploy'
+ 				sh 'mvn -X cicd/pom.xml clean install package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Dmule.environment=Sandbox -DmuleDeploy'
  			}
  		}
  	}	
