@@ -1,7 +1,0 @@
-path: "/Dev/cicd"
-port: "8081"
-app.runtime: "4.2.1"
-username: "JenkinsDevOps"
-password: "DevOps1234@"
-project.artifactId: "cicd"
-environment: "Sandbox"
