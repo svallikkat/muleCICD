@@ -7,11 +7,18 @@ pipeline{
  	stage ('Build'){
  		steps {
  			withMaven(maven:'maven'){
- 				sh 'mvn -f cicd/pom.xml clean install'
+ 				sh 'mvn -f cicd/pom.xml clean package -DattachMuleSources -DlightweightPackage'
  			}
  		}
  	}
-
+ 	stage ('Deploy'){
+ 		steps {
+ 			withMaven(maven:'maven'){
+ 				sh 'mvn -f cicd/pom.xml clean package deploy -DmuleDeploy'
+ 			
+ 			}
+ 		}
+ 	}
  	
  }
 
