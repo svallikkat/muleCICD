@@ -1,0 +1,12 @@
+http:
+  basepath: "/DevOps"
+  path: "/cicd"
+  port: "8081"
+  host: "localhost"
+cloudHubDeployment:
+  muleVersion: "4.2.1"
+  username: "JenkinsDevOps"
+  password: "DevOps1234@"
+  applicationName: "app10-cicd"
+  environment: "Sandbox"
+  workerType: "MICRO"
