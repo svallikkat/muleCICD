@@ -30,6 +30,7 @@
 					  <targetType>server</targetType>
 					  <username>OnPrem02Student10</username>
 					  <password>L3arnmule</password>
+					  <businessGroup>OnPrem02Group10/OnPrem02SubGroup10</businessGroup>
 					  <environment>Sandbox</environment>
 					  <properties>
 					  	<http.port>9091</http.port>
