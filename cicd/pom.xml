@@ -30,12 +30,9 @@
 					  <targetType>server</targetType>
 					  <username>OnPrem02Student10</username>
 					  <password>L3arnmule</password>
-					  <businessGroup>OnPrem02Group10/OnPrem02SubGroup10</businessGroup>
-					  <businessGroupId>284c8680-d419-4f16-8c80-25079ac8bf99</businessGroupId>
+					  <businessGroup>OnPrem02Group10</businessGroup>
+					  <businessGroupId>b09826da-2b1e-4926-b767-abde1a72c4bc</businessGroupId>
 					  <environment>Sandbox</environment>
-					  <properties>
-					  	<http.port>9091</http.port>
-					  </properties>
 					</armDeployment>
 				</configuration>
 			</plugin>
