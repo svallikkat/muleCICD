@@ -24,11 +24,13 @@
 				<extensions>true</extensions>
 				<configuration>
 					<armDeployment>
+					    <url>https://anypoint.mulesoft.com</url>
 					    <username>OnPrem02Student10</username>
 					    <password>L3arnmule</password>
 					    <targetType>server</targetType>
 					    <environment>Sandbox</environment>
 					    <target>LDevOps</target>
+					    <redeploy>true</redeploy>
 					</armDeployment>
 				</configuration>
 			</plugin>
