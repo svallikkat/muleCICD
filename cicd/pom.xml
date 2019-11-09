@@ -25,12 +25,12 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${cloudHubDeployment.muleVersion}</muleVersion>
-						<username>${cloudHubDeployment.username}</username>
-						<password>${cloudHubDeployment.password}</password>
-						<applicationName>${cloudHubDeployment.applicationName}</applicationName>
-						<environment>${cloudHubDeployment.environment}</environment>
-						<workerType>${cloudHubDeployment.workerType}</workerType>
+						<muleVersion>4.2.1</muleVersion>
+						<username>JenkinsDevOps</username>
+						<password>DevOps1234@</password>
+						<applicationName>app101-cicd</applicationName>
+						<environment>Sandbox</environment>
+						<workerType>MICRO</workerType>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
