@@ -24,7 +24,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<armDeployment>
-					  <muleVersion>4.2.1<</muleVersion>
+					  <muleVersion>4.2.1</muleVersion>
 					  <uri>https://anypoint.mulesoft.com</uri>
 					  <target>LDevOps</target>
 					  <targetType>server</targetType>
